@@ -2,4 +2,58 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+
+header {
+    background-color: orangered;
+    position: fixed;
+    width: 100%;
+}
+
+/* Container nav */
+
+.flex-container {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.column {
+    padding: 3rem 0;
+    color: white;
+}
+
+.lateral {
+    width: 20%;
+}
+
+.central {
+    width: 60%;
+    text-align: center;
+} 
+
+/* Classi Nav */
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 150px;
+    position: relative;
+    top: 4px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+main {
+    background-color: aqua;
+    min-height: 80rem;
 }
