@@ -39,7 +39,7 @@ header {
 } 
 
 /* Classi Nav */
-.nav-link {
+.link {
     color: white;
     text-decoration: none;
     padding-right: 5px;
@@ -88,6 +88,7 @@ header {
     padding: 5px;
     position: absolute;
     right: -1%;
+    top: 2%;
     z-index: 2;
 }
 
@@ -130,3 +131,51 @@ header {
     text-decoration: line-through;
     display: inline;
     font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+    margin-top: 3rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.inline {
+    display: inline;
+}
+
+.lateral-footer {
+    width: 50%;
+}
+
+.fa-square-twitter:hover {
+    background-color: lightblue;
+}
+.fa-square-facebook:hover {
+    background-color: blue;
+}
+.fa-square-instagram:hover {
+    background-color: blueviolet;
+}
+
+.fa-square-pinterest:hover {
+    background-color: red;
+}
+
+.fa-square-youtube:hover {
+    background-color: red;
+}
+
