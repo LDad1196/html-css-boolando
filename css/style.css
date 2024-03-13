@@ -11,6 +11,7 @@ header {
     background-color: orangered;
     position: fixed;
     width: 100%;
+    z-index: 3;
 }
 
 /* Container nav */
@@ -24,7 +25,7 @@ header {
 }
 
 .column {
-    padding: 3rem 0;
+    padding: 2rem 0;
     color: white;
 }
 
@@ -41,6 +42,7 @@ header {
 .nav-link {
     color: white;
     text-decoration: none;
+    padding-right: 5px;
 }
 
 .logo-img {
@@ -53,7 +55,78 @@ header {
     text-align: right;
 }
 
-main {
-    background-color: aqua;
-    min-height: 80rem;
+/* Main content */
+/* Classi card e interno card */
+.card {
+    width: 32%;
+    margin-top: 8rem;
+    margin-right: 1%;
+    position: relative;
 }
+
+.img-size {
+    width: 100%;
+}
+
+.img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.card:hover .img-top {
+    display:inline;
+}
+
+.like {
+    background-color: white;
+    color: black;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    position: absolute;
+    right: -1%;
+    z-index: 2;
+}
+
+.like:hover {
+    color: red;
+}
+
+.discount {
+    background-color: red;
+    color: white;
+    font-size: 13px;
+    padding: 5px;
+    position: absolute;
+    bottom: 30%;
+    z-index: 2;
+}
+
+.sustainable {
+    background-color: green;
+    color: white;
+    font-size: 13px;
+    padding: 5px;
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+    z-index: 2;
+}
+
+.special-sus {
+    left: 0;
+}
+
+.red {
+    color: red;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: line-through;
+    display: inline;
+    font-weight: bold;
