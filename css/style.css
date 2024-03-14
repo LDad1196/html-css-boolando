@@ -5,10 +5,25 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.inline {
+    display: inline;
+}
+
+
 /* Header */
 
 header {
     background-color: orangered;
+    box-shadow: 0 1px 3px #666;
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -19,7 +34,7 @@ header {
 .flex-container {
     display: flex;
     width: 80%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
@@ -46,22 +61,23 @@ header {
 }
 
 .logo-img {
-    width: 150px;
+    height: 2rem;
     position: relative;
     top: 4px;
 }
 
-.text-right {
-    text-align: right;
+/* Main content */
+
+main {
+    background-color: whitesmoke;
 }
 
-/* Main content */
 /* Classi card e interno card */
 .card {
     width: 32%;
     margin-top: 8rem;
-    margin-right: 1%;
     position: relative;
+    border: 2px solid black;
 }
 
 .img-size {
@@ -69,26 +85,30 @@ header {
 }
 
 .img-top {
-    display: none;
+    display: inline;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
+    opacity: 0;
+    transition: 300ms;
 }
 
 .card:hover .img-top {
-    display:inline;
+    opacity: 1;
+    transition: 300ms;
 }
 
 .like {
     background-color: white;
     color: black;
-    width: 30px;
-    height: 30px;
-    padding: 5px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    padding: 9px;
     position: absolute;
-    right: -1%;
     top: 2%;
+    right: 0;
     z-index: 2;
 }
 
@@ -113,7 +133,7 @@ header {
     padding: 5px;
     position: absolute;
     bottom: 30%;
-    left: 15%;
+    left: 3rem;
     z-index: 2;
 }
 
@@ -151,10 +171,6 @@ footer {
     width: 80%;
     margin: 0 auto;
     padding-top: 1rem;
-}
-
-.inline {
-    display: inline;
 }
 
 .lateral-footer {
